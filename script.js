@@ -13,7 +13,7 @@ $(document).ready(function() {
 let user = {
   "amount":"10.00",
   "currency":"INR",
-  "mtx":"100090",
+  "mtx":"100091",
   "email_id":"rishabh.thakur@test.com",
   "contact_number":"7349524079"
  };
@@ -28,10 +28,10 @@ let user = {
     },
     body: JSON.stringify(user)
   });
-  alert(response1.id + "Response yahi hai");
+  alert(response1.token + "Response yahi hai");
 
   Layer.checkout({
-   token: "sb_pt_BS6oGtGkGQTiKXh",
+   token: "response1.id",
    accesskey: "92a63da0-a0e4-11eb-90c7-8d34bcd27de7"
    },
    function(response) {
