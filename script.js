@@ -28,7 +28,7 @@ let user = {
     },
     body: JSON.stringify(user)
   });
-  alert(response1, "Response yahi hai");
+  alert(response1.id + "Response yahi hai");
 
   Layer.checkout({
    token: "sb_pt_BS6oGtGkGQTiKXh",
