@@ -20,7 +20,7 @@ let user = {
 
 
   async function handleClick(){
-  let response1 = await fetch('/https://sandbox-icp-api.bankopen.co/api/payment_token', {
+  let response1 = await fetch('https://sandbox-icp-api.bankopen.co/api/payment_token', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
@@ -28,7 +28,7 @@ let user = {
     },
     body: JSON.stringify(user)
   });
-  alert(response1.token + "Response yahi hai");
+  alert(response1.id + "Response yahi hai");
 
   Layer.checkout({
    token: "response1.id",
